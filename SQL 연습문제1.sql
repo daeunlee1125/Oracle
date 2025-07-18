@@ -171,25 +171,43 @@ where substr(ord_date, 1, 10) = '2022-07-03';
 
 --몰랐던 부분들 복습하기!!
 --실습 8
-
+select distinct company from product;
 --실습 10
-
+select pname, price+500 as 조정단가 from product;
 --실습 15
-
+select cid, name, hp, address from customer
+where name like '김%';
 --실습 16
-
+select cid, name, hp, address from customer
+where name like '__';
 --실습 17
-
+select * from customer
+where hp is null;
 --실습 20
-
+select * from orders
+where ord_cnt>=3
+order by ord_cnt desc, ord_pno asc;
 --실습 23
-
+select count(*) as 고객수 from customer;
 --실습 25
-
+select ord_pno as "주문 상품번호", sum(ord_cnt) as "총 주문수량" from orders
+group by ord_pno
+order by ord_pno;
 --실습 27
-
+select company as 제조업체, count(*) as 제품수, max(price) as "최고가"
+from product
+group by company having count(*)>=2;
 --실습 28
-
+select ord_pno, ord_cid, sum(ord_cnt) as "총 주문수량" from orders
+group by ord_pno, ord_cid
+order by ord_pno;
 --실습 29
-
+select ord_cid, pname as 주문제품 from orders a
+join product b on a.ord_pno = pno
+where ord_cid='c102';
 --실습 30
+select ord_cid, name, pname, ord_date
+from orders a
+join product b on a.ord_pno = b.pno
+join customer c on a.ord_cid = c.cid
+where ord_date like '2022-07-03%';
