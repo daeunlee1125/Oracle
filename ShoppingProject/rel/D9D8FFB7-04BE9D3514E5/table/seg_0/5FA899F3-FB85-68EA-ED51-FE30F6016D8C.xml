@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5FA899F3-FB85-68EA-ED51-FE30F6016D8C" name="Category">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:14:15 UTC</createdTime>
+<ownerDesignName>ShoppingProject</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cateNo" id="B65A0086-671D-AB41-9CDE-48E3B5931ECA">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:24:59 UTC</createdTime>
+<ownerDesignName>ShoppingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cateName" id="E798AD26-0FCF-9C1E-35F7-551D66F788CD">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:25:05 UTC</createdTime>
+<ownerDesignName>ShoppingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB3CD2FB-E5CD-8775-DB55-F3709A7B61D8" name="Category_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:24:59 UTC</createdTime>
+<ownerDesignName>ShoppingProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B65A0086-671D-AB41-9CDE-48E3B5931ECA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
