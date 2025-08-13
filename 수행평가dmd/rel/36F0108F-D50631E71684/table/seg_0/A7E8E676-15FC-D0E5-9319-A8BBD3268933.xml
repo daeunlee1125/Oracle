@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A7E8E676-15FC-D0E5-9319-A8BBD3268933" name="Transaction">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:15:56 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="trans_id" id="D2872E4F-6C1D-6622-4C2F-9C8A2A6C1A02">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:16:35 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trans_acc_id" id="CDD29032-7469-68C4-CAD1-5E2EED05E22C">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:19:25 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE548214-1D17-C10E-1561-FD0BDEF30432" referredColumn="E21E7C60-AAB7-3E1A-B608-D2391BD5AED3"/>
+</associations>
+</Column>
+<Column name="trans_type" id="F104A7BE-FC78-8A76-07C0-15B5BDF80162">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:16:35 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trans_message" id="8F242E5C-DEB0-2931-1C11-2BBDD787C2C6">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:16:35 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trans_money" id="93A96F00-0355-1918-E41F-85CB28E5A1EA">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:16:35 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trans_date" id="ABE79565-C076-831B-426E-52C0ADDC1A5A">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:16:35 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="977006C7-4A9A-44AC-5D19-C11811F117F2" name="Transaction_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:16:35 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2872E4F-6C1D-6622-4C2F-9C8A2A6C1A02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="014DA338-B40E-906A-6CCC-938A5323A22A" name="Transaction_Account_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:19:25 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDD29032-7469-68C4-CAD1-5E2EED05E22C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

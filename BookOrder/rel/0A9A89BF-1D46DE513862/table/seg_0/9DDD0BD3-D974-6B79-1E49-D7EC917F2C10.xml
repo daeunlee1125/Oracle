@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9DDD0BD3-D974-6B79-1E49-D7EC917F2C10" name="BO_Order">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:45:43 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="orderNo" id="200193AF-95DB-3541-3A9A-77DECA9482F3">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:50:05 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orderId" id="C9BE3421-8345-A41C-29C4-7C97AF575696">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:12:30 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B443999-633E-6C7C-87EC-9F6B5AF808D6" referredColumn="4658539F-FD5F-258A-E6B4-7B44752BA238"/>
+</associations>
+</Column>
+<Column name="bookId" id="DBF541FD-A78E-1AD7-F898-6E85A68E61D5">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:13:04 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4EB7EAEE-F176-B1B4-E1E5-7235A1F75553" referredColumn="78F6ED8D-5F40-A2C8-B441-F64F94560260"/>
+</associations>
+</Column>
+<Column name="count" id="A8937890-343B-21FA-1B59-3769D219B5AD">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:07:52 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orderDate" id="FCCC192C-DD0F-D684-791E-B28B87EBA47C">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:50:05 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1739AFA8-DE3B-1E29-563E-59E02338D38C" name="Order_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 05:50:05 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="200193AF-95DB-3541-3A9A-77DECA9482F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7622BEA4-ED87-8597-ABB1-F999196B1644" name="Order_Customer_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:12:30 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9BE3421-8345-A41C-29C4-7C97AF575696"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82F48FF4-8300-70B0-66D8-0A03DF9C1DB8" name="Order_Book_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:13:04 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBF541FD-A78E-1AD7-F898-6E85A68E61D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

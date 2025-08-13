@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3B2F83C-BB9F-6A78-B4B5-E7E0960484F0" name="Customer">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:11 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cust_jumin" id="519D5605-EF24-856C-C8F9-636F8EB0120E">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:58 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>14 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="6ED4CC3D-FCB8-0B9E-E689-AEAFFDC5FA67">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:58 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="A1A30732-83DA-4A99-C3F1-044D3F84E6EF">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:58 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="birth" id="DEF73D43-0D20-1D3C-525B-7374C7A2933F">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:58 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="ED510406-1E53-670A-FD38-B00C917370FC">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:58 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hp" id="E41CFEB2-3EC2-3A95-CA19-3F54A5AA9D89">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:58 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="job" id="A9031565-E9AB-1BB0-6368-16D4003E0E17">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:58 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E26C819-9F3F-E1B8-5F51-6513593277D0" name="Customer_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:08:58 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="519D5605-EF24-856C-C8F9-636F8EB0120E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

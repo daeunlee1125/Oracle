@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C207EFA0-D42B-2E36-C69C-7A83344D8906" name="Account">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:13:18 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="acc_id" id="E21E7C60-AAB7-3E1A-B608-D2391BD5AED3">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:13:59 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>14 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_jumin" id="F7939C4D-54C5-1F96-2D4F-6D6F89BCAD6A">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:19:32 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0CCE557-CD58-188F-7AEB-E50C569F3634" referredColumn="519D5605-EF24-856C-C8F9-636F8EB0120E"/>
+</associations>
+</Column>
+<Column name="acc_type" id="6B48D114-7A0F-8F61-832D-628EB53B9997">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:13:59 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="acc_balance" id="C532B927-F570-54A9-C319-66B60B44B315">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:13:59 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="acc_card" id="3432DC4B-9935-2F19-EE86-B86152B283A7">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:13:59 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="acc_register_date" id="AC334482-E6AF-64BC-E04B-85CB9685F498">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:13:59 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB622136-67B5-F506-58E1-A51772004BF7" name="Account_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:13:59 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E21E7C60-AAB7-3E1A-B608-D2391BD5AED3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5088145F-E1A6-F5C0-4B85-3D63CA3C1FC2" name="Account_Customer_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:19:32 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7939C4D-54C5-1F96-2D4F-6D6F89BCAD6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

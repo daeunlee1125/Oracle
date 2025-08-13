@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B3F04F6-9488-C403-DF30-8F48C024B62F" name="BO_OrderItem">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:25:08 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="orderNo" id="724A5526-498F-4A92-165C-89DBEBF49FA5">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:27:30 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84F54F6F-28F7-D226-E709-B465EEE9ECEF" referredColumn="F8C4B9AA-94A4-5C9C-05E0-2635441220E3"/>
+</associations>
+</Column>
+<Column name="bookId" id="1A83D383-2AD0-54AA-1032-555265C3DB3B">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:26:52 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="91403AD8-E502-DF25-8522-DB0E56CED44D" referredColumn="9771A8B2-6E00-79B6-96D3-9544F707BE27"/>
+</associations>
+</Column>
+<Column name="count" id="BC211F0B-126B-86F1-1BE3-A6E143C658FF">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:25:58 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price" id="6437D666-8F6B-260D-0013-7D126F18D08D">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:25:08 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="95DD5695-5B00-DD1F-1C09-1871542A4BE1" name="BO_Order3v1_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:25:08 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="724A5526-498F-4A92-165C-89DBEBF49FA5"/>
+<colUsage columnID="1A83D383-2AD0-54AA-1032-555265C3DB3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB510697-E872-1C3F-07B6-206064DDB9BB" name="BO_OrderItem_BO_Book3_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:26:52 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A83D383-2AD0-54AA-1032-555265C3DB3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C34CCAA6-D0E6-D759-0011-5F201922B215" name="BO_OrderItem_BO_Order3_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-12 06:27:30 UTC</createdTime>
+<ownerDesignName>BookOrder</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="724A5526-498F-4A92-165C-89DBEBF49FA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

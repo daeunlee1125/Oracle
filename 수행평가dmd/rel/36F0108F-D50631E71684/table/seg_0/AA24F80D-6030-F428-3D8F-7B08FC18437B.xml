@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AA24F80D-6030-F428-3D8F-7B08FC18437B" name="Card">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:10:47 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="card_no" id="19AA42BD-2386-C860-305B-4397A84E63DD">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:11:18 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>14 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_jumin" id="6FB349CB-12C5-7A97-48BF-0071485B9EB2">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:19:05 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1DDB71D6-E68B-DE7C-3FC6-DF1D65CCCDD6" referredColumn="519D5605-EF24-856C-C8F9-636F8EB0120E"/>
+</associations>
+</Column>
+<Column name="acc_id" id="C22756EC-A547-0764-9442-28EA5E0F5B80">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:19:16 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90C8492E-7732-29B5-16D4-FE7995D72A35" referredColumn="E21E7C60-AAB7-3E1A-B608-D2391BD5AED3"/>
+</associations>
+</Column>
+<Column name="card_register_date" id="C57DF058-A8B8-0D69-BB3A-13C7F8E0BB5E">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:11:18 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="card_limit" id="24AFF50C-1000-B13D-3A65-C2586A6FEFC3">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:11:18 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="card_approve_date" id="A24C79CC-A1B1-1189-D609-675F2EF82E1A">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:11:18 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="card_type" id="8BAB5870-47D4-5A21-542D-D4AD0765F443">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:11:18 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6982395A-2330-95BE-840C-4720231524BF" name="Card_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:11:18 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19AA42BD-2386-C860-305B-4397A84E63DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BBBC3374-72C2-2407-10BD-B1BEFFBDF177" name="Card_Customer_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:19:05 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FB349CB-12C5-7A97-48BF-0071485B9EB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18ECC3CB-30F8-C272-13C7-9532E6023492" name="Card_Account_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-13 00:19:16 UTC</createdTime>
+<ownerDesignName>수행평가dmd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C22756EC-A547-0764-9442-28EA5E0F5B80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
